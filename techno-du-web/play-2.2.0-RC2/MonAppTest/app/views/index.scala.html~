@@ -1,0 +1,7 @@
+@(message: String)//definit les parametre envoyés à la vue index
+
+@main("Welcome to Play") {
+
+    @play20.welcome(message, style = "Java")
+
+}

@@ -1,0 +1,27 @@
+Installation play
+Tuto installation : http://www.playframework.com/documentation/2.1.1/Installing
+configuration de l'environnement
+	export PATH=$PATH:/relativePath/to/play
+	/*environnement fac*/export HTTP_PROXY=http://162.38.218.204:3128
+
+
+
+/************/
+	source données RDF
+		http://linkeddata.org/
+
+
+
+créer une application (utile) qui exploite plusieurs API et qui génére une ressource accessible avec un format RDF
+créer une valeur ajouter à partir des sources RDF
+
+contraintes : récuperer les informations avec des requêtes SPARQL
+
+
+
+Idées : 
+	developper une application localisant les bars de montpellier. Exploiter plusieurs ressources d'informations pour creer
+	du contenut interessant.
+		* prix des conso
+		* localisation du tram à promixité + le dernier départ
+		* twitte contenant les hashtag du bar 

@@ -1,0 +1,23 @@
+
+public class main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// quelques définitions
+		static String personURI    = "http://somewhere/JohnSmith";
+		static String fullName     = "John Smith";
+
+		// créer un modèle vide
+		Model model = ModelFactory.createDefaultModel();
+
+		// créer la ressource
+		Resource johnSmith = model.createResource(personURI);
+
+		// ajouter la propriété
+		 johnSmith.addProperty(VCARD.FN, fullName);
+	}
+
+}

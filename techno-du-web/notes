@@ -12,9 +12,7 @@ configuration de l'environnement
 
 
 
-créer une application (utile) qui exploite plusieurs API et qui génére une ressource accessible avec un format RDF
-créer une valeur ajouter à partir des sources RDF
-
+Créer une application (avec le framework play) qui récuperer des informations sur le web (via API). Compiler ces informations pour générer notre propre une ressource accessible à d'autre application avec un format RDF.
 contraintes : récuperer les informations avec des requêtes SPARQL
 
 

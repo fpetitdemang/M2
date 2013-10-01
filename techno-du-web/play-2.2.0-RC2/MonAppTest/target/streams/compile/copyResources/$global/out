@@ -1,0 +1,4 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/franck/M2/techno-du-web/play-2.2.0-RC2/MonAppTest/conf/routes,/home/franck/M2/techno-du-web/play-2.2.0-RC2/MonAppTest/target/scala-2.10/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/franck/M2/techno-du-web/play-2.2.0-RC2/MonAppTest/conf/routes~,/home/franck/M2/techno-du-web/play-2.2.0-RC2/MonAppTest/target/scala-2.10/classes/routes~)[0m
+[0m[[0mdebug[0m] [0m	(/home/franck/M2/techno-du-web/play-2.2.0-RC2/MonAppTest/conf/application.conf,/home/franck/M2/techno-du-web/play-2.2.0-RC2/MonAppTest/target/scala-2.10/classes/application.conf)[0m

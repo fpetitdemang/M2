@@ -1,0 +1,9 @@
+2013-09-26 11:18:47,392 - [INFO] - from play in pool-4-thread-2 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2013-09-26 11:18:52,298 - [WARN] - from play in New I/O worker #1 
+No application found at invoker init
+
+2013-09-26 11:19:06,763 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+

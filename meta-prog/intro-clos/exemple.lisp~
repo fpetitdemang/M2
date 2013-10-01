@@ -1,0 +1,7 @@
+(defclass Point ()
+  ((x :initform 0
+      :initarg :x
+      :accessor point-x)
+   (y :initform 1
+      :initarg :y
+      :accessor point-y))

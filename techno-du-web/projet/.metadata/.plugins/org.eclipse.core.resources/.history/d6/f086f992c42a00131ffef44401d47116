@@ -1,0 +1,37 @@
+import javax.annotation.Resource;
+
+import com.hp.hpl.jena.ontology.Individual;
+import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.vocabulary.VCARD;
+
+import java.io.*;
+import org.jdom2.*;
+import org.jdom2.input.*;
+import org.jdom2.filter.*;
+import java.util.List;
+import java.util.Iterator;
+
+public class main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// quelques définitions
+		String personURI    = "http://somewhere/JohnSmith";
+		String fullName     = "John Smith";
+
+		// créer un modèle vide
+		Model model = ModelFactory.createDefaultModel();
+
+		// créer la ressource
+		com.hp.hpl.jena.rdf.model.Resource johnSmith = model.createResource(personURI);
+
+		// ajouter la propriété
+		 johnSmith.addProperty(VCARD.FN, fullName);
+		 model.write(System.out);
+	}
+
+}

@@ -1,0 +1,5 @@
+<osm>
+ <node id="123" lat="x" lon="y" version="142" changeset="12" user="fred" uid="123" visible="true" timestamp="2005-07-30T14:27:12+01:00">
+   <tag k="note" v="Just a node"/>
+ </node>
+</osm>

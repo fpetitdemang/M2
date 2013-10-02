@@ -1,0 +1,8 @@
+
+public interface Visitor {
+	//declare autant de methode que de type d'element
+	public int visitArchive(Archive m_archive);
+	public int visitDirectory(Directory m_directory);
+	public int visitFile(File m_file);
+	//ect...
+}

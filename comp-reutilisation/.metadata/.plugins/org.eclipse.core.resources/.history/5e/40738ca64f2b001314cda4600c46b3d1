@@ -1,0 +1,23 @@
+//VisitorOperation
+public class VisitorSize implements Visitor {
+
+	@Override
+	public void visitArchive(Archive m_archive) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void visitDirectory(Directory m_directory) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void visitFile(File m_file) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

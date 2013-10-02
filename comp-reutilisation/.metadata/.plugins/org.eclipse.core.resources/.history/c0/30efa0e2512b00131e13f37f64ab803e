@@ -123,7 +123,7 @@ public class Directory extends ElementStockage
 
 	@Override
 	public void accept(Visitor v) {
-		//tester type passé en argument?
+		//tester type en entrée?
 		v.visitDirectory(this);
 	}
 	

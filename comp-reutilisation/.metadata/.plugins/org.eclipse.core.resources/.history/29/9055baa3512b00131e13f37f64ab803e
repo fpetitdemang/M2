@@ -1,8 +1,6 @@
 //VisitorOperation
 public class VisitorSize implements Visitor {
 	
-	private int taille = 0;
-	
 	@Override
 	public void visitArchive(Archive m_archive) {
 		//return 0;
@@ -21,7 +19,7 @@ public class VisitorSize implements Visitor {
 			somme=somme+s.size() ;
 		}
 				
-		 somme = taille;
+		//return somme;
 	}
 
 	@Override

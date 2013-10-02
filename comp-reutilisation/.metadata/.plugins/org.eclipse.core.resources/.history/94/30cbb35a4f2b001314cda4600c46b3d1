@@ -1,0 +1,5 @@
+//VisitorOperation
+public class VisitorSize extends Visitor {
+
+	
+}

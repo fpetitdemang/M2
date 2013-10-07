@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="Osmosis SNAPSHOT-r26564">
+  <node id="70952868" version="3" timestamp="2011-04-26T20:54:44Z" uid="35598" user="ReLuc" changeset="7979308" lat="43.6106997" lon="3.8754476">
+    <tag k="name" v="Rebuffy"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="70953431" version="2" timestamp="2009-12-03T16:23:33Z" uid="204574" user="annoncesvertesrobin" changeset="3281528" lat="43.6103997" lon="3.8745903">
+    <tag k="name" v="O&apos; Carolans"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="70953945" version="8" timestamp="2010-04-29T12:57:59Z" uid="204574" user="annoncesvertesrobin" changeset="4557390" lat="43.6105521" lon="3.8785149">
+    <tag k="name" v="The Shakespeare"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="70956526" version="3" timestamp="2010-09-04T22:23:22Z" uid="83557" user="Esperanza36" changeset="5683251" lat="43.6082512" lon="3.8765453">
+    <tag k="name" v="Fitzpatrick&apos;s"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="105440558" version="5" timestamp="2009-11-23T15:53:02Z" uid="196334" user="annoncesvertes2" changeset="3196818" lat="43.6293599" lon="3.8701073">
+    <tag k="name" v="Le Ranch"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="105440560" version="3" timestamp="2007-11-22T19:33:54Z" uid="56" user="Andrew T" changeset="593075" lat="43.6293411" lon="3.8704815">
+    <tag k="created_by" v="Potlatch 0.5c"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="105440570" version="3" timestamp="2007-11-22T19:33:55Z" uid="56" user="Andrew T" changeset="593075" lat="43.6299686" lon="3.8706875">
+    <tag k="created_by" v="Potlatch 0.5c"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="251344346" version="3" timestamp="2010-12-30T14:28:12Z" uid="35598" user="ReLuc" changeset="6810018" lat="43.6131115" lon="3.8691846">
+    <tag k="name" v="Bar du Carré du Roi"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="298890582" version="5" timestamp="2008-12-30T15:01:42Z" uid="53957" user="Nix46" changeset="672589" lat="43.6037655" lon="3.9185507">
+    <tag k="name" v="The O&apos;liver"/>
+    <tag k="layer" v="5"/>
+    <tag k="amenity" v="pub"/>
+    <tag k="note" v="To be defined exactly, building under construction, bup done"/>
+  </node>
+  <node id="299983752" version="4" timestamp="2012-03-08T16:52:28Z" uid="239944" user="spuhler" changeset="10911058" lat="43.6077462" lon="3.8758738">
+    <tag k="name" v="Le Saint Roch"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="564910742" version="3" timestamp="2010-02-03T09:21:32Z" uid="94483" user="annoncesvertes" changeset="3781560" lat="43.6064588" lon="3.8823876">
+    <tag k="name" v="Charlie&apos;s Beer"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="579814460" version="4" timestamp="2010-01-20T09:14:31Z" uid="94483" user="annoncesvertes" changeset="3664993" lat="43.6084777" lon="3.8802186">
+    <tag k="name" v="Greyhound"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="582823222" version="2" timestamp="2011-04-26T20:44:08Z" uid="35598" user="ReLuc" changeset="7979308" lat="43.6079999" lon="3.8759685">
+    <tag k="name" v="The Egg"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="598984741" version="3" timestamp="2010-10-06T18:21:15Z" uid="327466" user="CartoLibreMontpellier" changeset="5971898" lat="43.6052067" lon="3.8823519">
+    <tag k="name" v="Macadam"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="606350089" version="2" timestamp="2011-03-19T12:52:14Z" uid="35598" user="ReLuc" changeset="7604471" lat="43.6129499" lon="3.8752475">
+    <tag k="name" v="Le Corto"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="618709747" version="3" timestamp="2011-03-25T10:52:06Z" uid="427179" user="DarkBisounours" changeset="7664426" lat="43.6064286" lon="3.882499">
+    <tag k="name" v="The Temple Bar"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="620884556" version="3" timestamp="2012-03-14T22:46:15Z" uid="94483" user="annoncesvertes" changeset="10983519" lat="43.6131731" lon="3.8795125">
+    <tag k="name" v="Up &amp; Down"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="621195698" version="3" timestamp="2012-01-13T09:59:03Z" uid="94483" user="annoncesvertes" changeset="10376943" lat="43.6146991" lon="3.879909">
+    <tag k="name" v="The Black Sheep"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="660247201" version="2" timestamp="2011-04-20T08:22:40Z" uid="140189" user="AnoLK" changeset="7913874" lat="43.60236" lon="3.870166">
+    <tag k="name" v="Le Player"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="1297121297" version="2" timestamp="2012-01-22T13:33:43Z" uid="27763" user="Syrus" changeset="10464689" lat="43.6166089" lon="3.8796233">
+    <tag k="wheelchair" v="no"/>
+    <tag k="name" v="Irish Tavern"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+  <node id="1585984235" version="2" timestamp="2012-03-08T16:49:38Z" uid="239944" user="spuhler" changeset="10911058" lat="43.6078518" lon="3.8759749">
+    <tag k="phone" v="09.66.94.53.71"/>
+    <tag k="food" v="yes"/>
+    <tag k="name" v="The Beehive"/>
+    <tag k="amenity" v="pub"/>
+  </node>
+</osm>

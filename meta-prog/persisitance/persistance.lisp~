@@ -1,0 +1,2 @@
+(defclass memo-class (standard-class)
+  (:metaclass standart-class))

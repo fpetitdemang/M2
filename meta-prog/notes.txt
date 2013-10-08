@@ -1,0 +1,11 @@
+1-Définir mémo-class
+2-Définir make-instance de memo-class
+3-Définir validate-superclass pour memo-class
+4-Définir memo-object
+5-Définir Personne, Etudiant
+6-Créer toto
+7-définir free-instance/free-object
+8-requetes
+
+cf spécification : page 188 du manuel
+

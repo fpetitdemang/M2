@@ -1,0 +1,16 @@
+
+public class VisitorFind implements Visitor{
+
+	@Override
+	public void visitDirectory(Directory m_directory) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void visitFile(File m_file) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,5 +1,5 @@
 
-public abstract class File extends ElementStockage
+public class File extends ElementStockage
 //classe reprsentant un fichier
 {
 	private String contenu ; // possde un contenu
@@ -32,11 +32,14 @@ public abstract class File extends ElementStockage
 	{
 		contenu = c ;
 	}
+	
+	public String getContenu(){
+		return contenu;
+	}
 
 	@Override
 	public void accept(Visitor v) {
-		// TODO Auto-generated method stub
-		
+		v.visitFile(this);		
 	}
 	
 	

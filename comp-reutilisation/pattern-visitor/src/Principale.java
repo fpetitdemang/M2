@@ -86,13 +86,28 @@ public class Principale
 		
 		File f4 = new File("Duval","duval") ;
 		
-		System.out.println("AVANT"+"\n") ;
+		/*System.out.println("AVANT"+"\n") ;
 		System.out.println("taille "+d.name+" : "+d.size()) ;
 		System.out.println("taille "+d2.name+" : "+d2.size()) ;
 		System.out.println("taille "+f.name+" : "+f.size()) ;
 		System.out.println("taille "+f2.name+" : "+f2.size()) ;
 		System.out.println("taille "+f3.name+" : "+f3.size()) ;
-		System.out.println("taille "+f4.name+" : "+f4.size()) ;
+		System.out.println("taille "+f4.name+" : "+f4.size()) ;*/
+		
+		
+		//VisitorSize vs = new VisitorSize();
+		//d.accept(vs);
+		//f.accept(vs);
+		
+		/*VisitorLs vls = new VisitorLs();
+		d.accept(vls);
+		f.accept(vls);*/
+		
+		VisitorCount v = new VisitorCount();
+		d.accept(v);
+		System.out.println(v.getCount());
+		
+		
 		
 		//RazVisitor raz = new RazVisitor() ;
 		//d.accept(raz) ;
@@ -108,7 +123,7 @@ public class Principale
 		System.out.println("taille "+f4.name+" : "+f4.size()) ;
 		*/
 		
-		d.ls();
-		d2.ls();
+		//d.ls();
+		//d2.ls();
 	}
 }

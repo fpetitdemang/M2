@@ -4,7 +4,7 @@ import java.util.Collection;
 public class Directory extends ElementStockage
 //classe reprsentant un dossier
 {
-	Collection<ElementStockage> listeDossier ; // collection des lments de stockage que le dossier contient
+	public Collection<ElementStockage> listeDossier ; // collection des lments de stockage que le dossier contient
 		
 	public Directory(String nom)
 	{
@@ -123,8 +123,17 @@ public class Directory extends ElementStockage
 
 	@Override
 	public void accept(Visitor v) {
-		//tester type passé en argument?
+		//cas où le visiteur est responsable du parcour de la structure -> listecontenu : private
+		/*v.visitDirectory(this);*/
+		//cas où la structure gère le parcour
 		v.visitDirectory(this);
+		for (ElementStockage s : listeDossier) // parcours de la collection (parcours de tout le dossier)
+		{
+			s.accept(v);
+			//System.out.println(s.name.length());
+		}
+		
+		//note : suivant le cas choisit : pas même implementation dans la méthode du visiteur
 	}
 	
 	

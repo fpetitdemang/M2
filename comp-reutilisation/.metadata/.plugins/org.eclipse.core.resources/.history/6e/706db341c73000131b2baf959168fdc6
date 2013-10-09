@@ -1,0 +1,22 @@
+
+public class VisitorFind implements Visitor{
+	
+	String chaine = "";
+
+	@Override
+	public void visitDirectory(Directory m_directory) {
+		collectionFind(m_directory.name)
+		
+	}
+
+	@Override
+	public void visitFile(File m_file) {
+		collectionFind(m_file.name);
+		
+	}
+	
+	public void collectionFind(String name){
+		if (chaine == name) System.out.println(name);
+	}
+
+}

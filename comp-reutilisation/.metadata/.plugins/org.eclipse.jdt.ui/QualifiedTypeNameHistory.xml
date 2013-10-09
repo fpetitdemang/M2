@@ -2,4 +2,7 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="Archive"/>
 <fullyQualifiedTypeName name="Directory"/>
+<fullyQualifiedTypeName name="VisitorSize"/>
+<fullyQualifiedTypeName name="VisitorLs"/>
+<fullyQualifiedTypeName name="Visitor"/>
 </qualifiedTypeNameHistroy>

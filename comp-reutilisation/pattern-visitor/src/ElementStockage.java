@@ -44,5 +44,9 @@ public abstract class ElementStockage
 		return this.size()*8 ;
 	}
 	
+	public String getName(){
+		return name;
+	}
+	
 	public abstract void accept(Visitor v) ;
 }

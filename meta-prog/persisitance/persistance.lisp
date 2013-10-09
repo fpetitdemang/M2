@@ -1,13 +1,27 @@
 (defclass memo-class (standard-class)
-  ;attribut -> liste des instances direct
-  ((instance-set :initform '()));:initform definit la valeur de l'attribut par defaut
+  ;liste des instances direct
+  ((instance-set :initform '();:initform definit la valeur de l'attribut par defaut
+		 :accessor get-instance-set))
   (:metaclass standart-class))
 
-(defmethod make-instance ((mc memo-class) &rest));herité par les instances de memo-classe -> ajoute l'instance à la liste des instances directs
+;alloue et initialise de la memoire conformement aux besoins de la classe
+(defmethod make-instance ((mc memo-class) &rest)
+  (let ((instance (call-next-method)))
+    ;ajoute la nouvelle instance à la collection des instances direct
+    (setf (get-instance-set mc)
+          (cons instance (get-instance-set mc))
+          )
+    ;retourne l'instance crée
+    instance)
+)
+
+
 
 ;verifie les combinaisons possibles des couples (super-classe, instance de) 
 ;(SC,SC) par defaut
-(defmethod validate-superclass ((mc memo-class)) (standart-class) (meta-class))
-(defmethod validate-superclass (
+(defmethod validate-superclass ((mc memo-class) (mc memo-class)) T)
+(defmethod validate-superclass (() ()) )
+(defmethod validate-superclass (() ()) )
+(defmethod validate-superclass (() ()) )
 
 

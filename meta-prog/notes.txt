@@ -7,5 +7,5 @@
 7-définir free-instance/free-object
 8-requetes
 
-cf spécification : page 188 du manuel
+cf spécification : page 174 du manuel
 

@@ -1,0 +1,17 @@
+NOM / Prénom / Parcours / Année de naissance
+
+Faites vous une différence entre Internet et le Web ? Si oui, quelle est la différence ?
+A quand estimez-vous la date de naissance d'Internet et/ou du Web ?
+Qui a inventé Internet et/ou le Web ?
+Pouvez-vous citer des technologies du Web et donner une idée de leur ordre d'apparition ?
+Qu'est-ce que le Web 2.0 pour vous ?
+Qu'est-ce que le Web 3.0 pour vous ?
+Qu'est-ce que le web sémantique ?
+
+Votre expérience du Web :
+Qu'est-ce que vous avez déjà réalisé pour du Web ?
+Quelles technologies utilisez-vous pour faire du Web ?
+
+Qu'est-ce qu'une API web ?
+
+Pourquoi vous êtes là ?

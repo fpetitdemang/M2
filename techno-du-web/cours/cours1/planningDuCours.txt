@@ -1,0 +1,38 @@
+Questionnaire
+Cours Histoire du Web
+Groupe - projet : au choix mais à base de mashups et exposant des données en RDF liées.
+Github
+
+TD : 
+lecture RFC HTTP. 
+Methods
+Response Code
+Content Negociation
+
+Première appli play sur twitter
+Tutoriel Github : try.github.io
+
+TP :
+Groupe / définition du projet
+Recherche de sources de données
+
+
+
+Sur GOOGLE :
+RFC HTTP 2616 en anglais
+
+Play Framework
+
+Création de compte sur GITHUB
+
+Twitter Bootstrap
+
+Mon Compte Github : Natoine
+
+Support à faire :
+AGILE - userstories
+MVP 
+Utilisation de Git et qu'est-ce qu'un gestionnaire de version
+Tuto Github
+Installation de play
+Tuto première appli play dans un repo github

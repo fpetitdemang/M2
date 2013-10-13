@@ -1,0 +1,14 @@
+Cours 
+HTTP
+XML
+Ontologie et RDF
+
+TD
+Play2 application qui sur un même GET renvoie du HTML ou du XML. Content Negotiation simple server-driven
+schématiser une ontologie pour son projet.
+Lire des ontologies existantes :
+FOAF
+SIOC
+BBC sport
+
+

@@ -1,0 +1,16 @@
+http://jena.apache.org/tutorials/rdf_api.html
+
+Un Graphe RDF est représenté par la classe jena.Model
+Une Ressource jena.Resource
+Un litéral jena.Literal
+Une propriété jena.Property
+
+Un Model est un ensemble de triplets (Sujet, Prédicat, Objet)
+
+A partir du main de WriteRDFXML
+Donc faire un projet ou vous stockez vos données en H2SQL et vous faites un export simple vers XML/RDF
+
+A partir du ReadRDFXML on sait lire un InputStream contenant du RDF/XML
+
+http://jena.apache.org/documentation/ontology/
+

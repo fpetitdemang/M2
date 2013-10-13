@@ -1,0 +1,17 @@
+Cours 
+HTTP
+XML
+Ontologie et RDF
+
+Si possible imprimer des pages de RDF pour envoyer des personnes au tableau voir ce qu'ils comprennent de vocabulaires.
+Puis leur faire écrire un vocabulaire. Le top serait de leur faire imaginer le vocabulaire FOAF puis de leur montrer après.
+
+TD
+Play2 application qui sur un même GET renvoie du HTML ou du XML. Content Negotiation simple server-driven
+schématiser une ontologie pour son projet.
+Lire des ontologies existantes :
+FOAF
+SIOC
+BBC sport
+
+

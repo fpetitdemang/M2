@@ -4,3 +4,18 @@
 4-Définir memo-object
 5-Définir Personne, Etudiant
 6-Créer toto
+7-définir free-instance/free-object
+8-requetes
+
+cf spécification : page 174 du manuel
+
+
+projet : 
+	implemementer memo-class en :
+		CILOS,
+		Python, ou Ruby (typage dynamique & niveau méta),
+		Java ou C# (langage std, pas de niveau méta mais faire simulation)
+		
+	méta-programmation à la compilation, au chargement
+		OpenJava ou Javassist ou ASM ou aspects
+			

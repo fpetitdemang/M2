@@ -1,3 +1,4 @@
+;meta-classe des classes qui memorisent leurs instances
 (defclass memo-class (standard-class)
   ;liste des instances direct
   ((instance-set :initform '();:initform definit la valeur de l'attribut par defaut
@@ -15,13 +16,27 @@
     instance)
 )
 
-
+;super-classe des objets des classes qui memorisent leurs instances 
 (defclass memo-object (standard-object)
   ()
   (:metaclass standard-class)
   )
 
+; Libération des instances pour le GC.
+; ---------------------------------------------------------------------
 
+; Libération pour memo-class.
+(defmethod free-instance ((mc memo-class) item)
+  ;SET field -> generic way of assigning values to data structures
+  (setf (instance-set mc)
+        (delete item (instance-set mc))
+        )
+  )
+
+; Libération pour memo-object.
+(defmethod free-object ((mo memo-object))
+    (free-instance (class-of mo) mo)
+)
 ;verifie les combinaisons possibles des couples (super-classe, instance de) 
 ;(SC,SC) par defaut
 
@@ -49,12 +64,14 @@
 (setf p1 (make-instance 'Personne))
 (setf p2 (make-instance 'Personne))
 (setf sp1 (make-instance 'SubPersonne))
+;(setf sp2 (make-instance 'SubPersonne))
 
-(print p1)
-(print p2)
-(print sp1)
+;(print p1)
+;(print p2)
+;(print sp1)
 
-(print (get-instances 'SubPersonne))
+(setf p1 (free-object 'p1))
+;(print (get-instances 'Personne))
 
 
 

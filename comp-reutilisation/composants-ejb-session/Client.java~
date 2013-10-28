@@ -1,0 +1,9 @@
+
+
+public Class Client
+{
+    InitialContext context = new InitialContext();
+    Converter converter = (Converter) context.lookup("java:global/Converter/Converter-ejb/ConverterBean");
+
+
+}

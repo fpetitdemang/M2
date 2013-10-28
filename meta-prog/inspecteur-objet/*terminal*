@@ -1,0 +1,808 @@
+fpetitdemang@r12:~/M2/meta-prog/inspecteur-objet$ clisp
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (make-instance 'standart-class)
+
+*** - FIND-CLASS : STANDART-CLASS n'est pas le nom d'une classe.
+Rentrées possibles:
+ABORT          :R1      Abort main loop
+Break 1 [2]> (make-instance 'standard-class)
+#<STANDARD-CLASS NIL>
+Break 1 [2]> (class-of (make-instance 'standard-class))                                                                                                     
+#<STANDARD-CLASS STANDARD-CLASS>
+Break 1 [2]> 
+*** - Ctrl-C : Interruption clavier
+Rentrées possibles:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [3]> (class-of (make-instance 'standard-class))
+#<STANDARD-CLASS STANDARD-CLASS>
+Break 2 [3]> 
+(load 'inspectObj.lisp)
+
+*** - LOAD: A file with name inspectobj.lisp does not exist
+Rentrées possibles:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [4]> (load 'inspectObj.lisp)
+
+*** - LOAD: A file with name inspectobj.lisp does not exist
+Rentrées possibles:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort main loop
+Break 4 [5]> 
+*** - Ctrl-C : Interruption clavier
+Rentrées possibles:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort main loop
+Break 5 [6]> 
+*** - Ctrl-C : Interruption clavier
+Rentrées possibles:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort main loop
+Break 6 [7]> 
+*** - Ctrl-C : Interruption clavier
+Rentrées possibles:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort main loop
+Break 7 [8]> 
+
+
+
+^V
+*** - Ctrl-C : Interruption clavier
+Rentrées possibles:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort debug loop
+ABORT          :R4      Abort debug loop
+ABORT          :R5      Abort debug loop
+ABORT          :R6      Abort debug loop
+ABORT          :R7      Abort debug loop
+ABORT          :R8      Abort main loop
+Break 8 [9]> 
+Break 7 [8]> 
+Break 6 [7]> 
+Break 5 [6]> 
+Break 4 [5]> 
+Break 3 [4]> 
+Break 2 [3]> 
+Break 1 [2]> 
+[10]> 
+À bientôt!
+fpetitdemang@r12:~/M2/meta-prog/inspecteur-objet$ ls
+inspectObj.lisp  inspectObj.lisp~  *terminal*
+fpetitdemang@r12:~/M2/meta-prog/inspecteur-objet$ clisp
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load 'inspectObj.lisp)
+
+*** - LOAD: A file with name inspectobj.lisp does not exist
+Rentrées possibles:
+ABORT          :R1      Abort main loop
+Break 1 [2]> 
+
+[3]> 
+À bientôt!
+fpetitdemang@r12:~/M2/meta-prog/inspecteur-objet$ clisp
+clisp       clisp-link  
+fpetitdemang@r12:~/M2/meta-prog/inspecteur-objet$ clisp
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> 
+À bientôt!
+fpetitdemang@r12:~/M2/meta-prog/inspecteur-objet$ ls
+inspectObj.lisp  inspectObj.lisp~  *terminal*  #*terminal*#
+fpetitdemang@r12:~/M2/meta-prog/inspecteur-objet$ clisp
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load ')nspectObj.lisp 
+
+*** - READ de #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>> : un object ne peut pas commencer par #\)
+Rentrées possibles:
+ABORT          :R1      Abort main loop
+Break 1 [2]> (load ')nspectObj.lisp 
+
+*** - READ de #<INPUT CONCATENATED-STREAM #<INPUT STRING-INPUT-STREAM> #<IO TERMINAL-STREAM>> : un object ne peut pas commencer par #\)
+Rentrées possibles:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort main loop
+Break 2 [3]> (load 'inspectobj
+
+
+*** - READ : Le «stream» d'entrée #<INPUT CONCATENATED-STREAM> se termine à l'intérieur d'un objet.
+Rentrées possibles:
+ABORT          :R1      Abort debug loop
+ABORT          :R2      Abort debug loop
+ABORT          :R3      Abort main loop
+Break 3 [4]> 
+Break 2 [3]> 
+Break 1 [2]> 
+[5]> 
+À bientôt!
+fpetitdemang@r12:~/M2/meta-prog/inspecteur-objet$ ls
+inspectObj.lisp  inspectObj.lisp~  *terminal*  #*terminal*#
+fpetitdemang@r12:~/M2/meta-prog/inspecteur-objet$ mv inspectObj.lisp inspectobj.lisp
+fpetitdemang@r12:~/M2/meta-prog/inspecteur-objet$ cli
+cli          cli-al       cli-csc      cli-gacutil  cli-ildasm   cli-resgen   cli-sn       clisp        clisp-link   
+fpetitdemang@r12:~/M2/meta-prog/inspecteur-objet$ clisp 
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - DEFMETHOD INSPECT-OBJECT : la lambda-liste manque.
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [2]> 
+[3]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - DEFMETHOD INSPECT-OBJECT : la lambda-liste manque.
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [4]> (load 'inspectobj.lisp)
+;;  Loading file inspectobj.lisp ...
+;;  Loaded file inspectobj.lisp
+T
+Break 1 [4]> 
+[5]> (make-instance 'standard-object)
+#<STANDARD-OBJECT #x206F7DB6>
+[6]> (slot-definition-(make-instance 'standard-object)                                                                                                      
+slot-definition-allocation    slot-definition-initform      slot-definition-location      slot-definition-readers       slot-definition-writers
+slot-definition-initargs      slot-definition-initfunction  slot-definition-name          slot-definition-type          
+[6]> (slot-definition-initf(make-instance 'standard-object)                                                                                                 
+slot-definition-initform      slot-definition-initfunction  
+[6]> (slot-definition-initform (make-instance 'standard-object))                                                                                            
+
+*** - NO-APPLICABLE-METHOD : À l'appel de #<STANDARD-GENERIC-FUNCTION SLOT-DEFINITION-INITFORM> avec les arguments (#<STANDARD-OBJECT #x206F9F9E>), aucune
+      méthode ne s'applique.
+Rentrées possibles:
+RETRY          :R1      try calling SLOT-DEFINITION-INITFORM again
+RETURN         :R2      specify return values
+ABORT          :R3      Abort main loop
+Break 1 [7]> 
+[8]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [9]> (load 'inspectobj.lisp)
+;;  Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort main loop
+Break 2 [10]> 
+[11]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [12]> 
+[13]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [14]> (load 'inspectobj.lisp)
+;;  Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort main loop
+Break 2 [15]> 
+[16]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [17]> (load 'inspectobj.lisp)
+;;  Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort main loop
+Break 2 [18]> 
+[19]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [20]> (load 'inspectobj.lisp)
+;;  Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-OBJECT>)> has 1, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort main loop
+Break 2 [21]> 
+[22]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - SYSTEM::%EXPAND-FORM : (LET ((M-CLASS (CLASS-OF INSTANCE)))) devrait être une expression LAMBDA
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-INSTANCE # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-INSTANCE # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [23]> 
+[24]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+;; Loaded file inspectobj.lisp
+T
+[25]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - SYSTEM::%EXPAND-FORM : (LET ((MCLASS (CLASS-OF INSTANCE)))) devrait être une expression LAMBDA
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-INSTANCE # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-INSTANCE # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [26]> (load 'inspectobj.lisp)
+;;  Loading file inspectobj.lisp ...
+*** - SYSTEM::%EXPAND-FORM : (LET NIL) devrait être une expression LAMBDA
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-INSTANCE # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-INSTANCE # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-INSTANCE # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-INSTANCE # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort main loop
+Break 2 [27]> (load 'inspectobj.lisp)
+;;   Loading file inspectobj.lisp ...
+*** - SYSTEM::%EXPAND-FORM : (LET (MCLASS)) devrait être une expression LAMBDA
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-INSTANCE # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-INSTANCE # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-INSTANCE # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-INSTANCE # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort debug loop
+SKIP           :R9      skip (DEFMETHOD INSPECT-INSTANCE # ...)
+RETRY          :R10     retry (DEFMETHOD INSPECT-INSTANCE # ...)
+STOP           :R11     stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R12     Abort main loop
+Break 3 [28]> 
+[29]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - SYSTEM::%EXPAND-FORM : (LET (MCLASS)) devrait être une expression LAMBDA
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-INSTANCE # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-INSTANCE # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [30]> (load 'inspectobj.lisp)
+;;  Loading file inspectobj.lisp ...
+*** - SYSTEM::%EXPAND-FORM : (LET (MACLASS)) devrait être une expression LAMBDA
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-INSTANCE # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-INSTANCE # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-INSTANCE # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-INSTANCE # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort main loop
+Break 2 [31]> (load 'inspectobj.lisp)
+;;   Loading file inspectobj.lisp ...
+*** - SYSTEM::%EXPAND-FORM : (LET MACLASS) devrait être une expression LAMBDA
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-INSTANCE # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-INSTANCE # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-INSTANCE # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-INSTANCE # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort debug loop
+SKIP           :R9      skip (DEFMETHOD INSPECT-INSTANCE # ...)
+RETRY          :R10     retry (DEFMETHOD INSPECT-INSTANCE # ...)
+STOP           :R11     stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R12     Abort main loop
+Break 3 [32]> 
+[33]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-OBJECT>)> has 1, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [34]> (load 'inspectobj.lisp)
+;;  Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort main loop
+Break 2 [35]> (load 'inspectobj.lisp)
+;;   Loading file inspectobj.lisp ...
+*** - SYSTEM::%EXPAND-FORM :
+       (LET ((KLASS (CLASS-OF INSTANCE)))
+        (FORMAT T "Class: ~S > Superclasses: ~S~%" (CLASS-NAME KLASS) (MAPCAR #'CLASS-NAME (CLASS-PRECEDENCE-LIST KLASS)))
+        (LET ((ALL-SLOTS (MAPCAR #'SLOT-DEFINITION-NAME (CLASS-SLOTS KLASS)))) (FORMAT T "Slots: ~%~{ ~S~%~}" ALL-SLOTS) (DEEPER ALL-SLOTS INSTANCE)))
+      devrait être une expression LAMBDA
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort debug loop
+SKIP           :R9      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R10     retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R11     stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R12     Abort main loop
+Break 3 [36]> (load 'inspectobj.lisp)
+;;    Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-OBJECT>)> has 1, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT #)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT #)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort debug loop
+SKIP           :R9      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R10     retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R11     stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R12     Abort debug loop
+SKIP           :R13     skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R14     retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R15     stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R16     Abort main loop
+Break 4 [37]> 
+[38]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-OBJECT>)> has 1, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT #)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT #)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [39]> (load 'inspectobj.lisp)
+;;  Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-OBJECT>)> has 1, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT #)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT #)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort main loop
+Break 2 [40]> (load 'inspectobj.lisp)
+;;   Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-OBJECT>)> has 1, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort debug loop
+SKIP           :R9      skip (DEFMETHOD INSPECT-OBJECT #)
+RETRY          :R10     retry (DEFMETHOD INSPECT-OBJECT #)
+STOP           :R11     stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R12     Abort main loop
+Break 3 [41]> 
+[42]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-OBJECT>)> has 1, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [43]> (load 'inspectobj.lisp)
+;;  Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort main loop
+Break 2 [44]> (load 'inspectobj.lisp)
+;;   Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort debug loop
+SKIP           :R9      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R10     retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R11     stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R12     Abort main loop
+Break 3 [45]> 
+[46]> 
+(load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [47]> (load 'inspectobj.lisp)
+;;  Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort main loop
+Break 2 [48]> 
+[49]> (load 'inspectobj.lisp)
+;; Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [50]> (load 'inspectobj.lisp)
+;;  Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-OBJECT>)> has 1, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort main loop
+Break 2 [51]> (load 'inspectobj.lisp)
+;;   Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-OBJECT>)> has 1, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort debug loop
+SKIP           :R9      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R10     retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R11     stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R12     Abort main loop
+Break 3 [52]> 
+[53]> (load 'inspectobj.lisp)*
+;; Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-OBJECT>)> has 1, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [54]> (load 'inspectobj.lisp)*
+;;  Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort main loop
+Break 2 [55]> (load 'inspectobj.lisp)*
+;;   Loading file inspectobj.lisp ...
+*** - FIND-CLASS : MEMO-CLASS n'est pas le nom d'une classe.
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD MAKE-INSTANCE # ...)
+RETRY          :R2      retry (DEFMETHOD MAKE-INSTANCE # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort debug loop
+SKIP           :R9      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R10     retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R11     stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R12     Abort main loop
+Break 3 [56]> 
+
+[57]> (load 'inspectobj.lisp)*
+;; Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-OBJECT>)> has 1, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [58]> (load 'inspectobj.lisp)*
+;;  Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-OBJECT>)> has 1, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort main loop
+Break 2 [59]> (load 'inspectobj.lisp)*
+;;   Loading file inspectobj.lisp ...
+*** - FIND-CLASS : MEMO-CLASS n'est pas le nom d'une classe.
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD MAKE-INSTANCE #)
+RETRY          :R2      retry (DEFMETHOD MAKE-INSTANCE #)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort debug loop
+SKIP           :R9      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R10     retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R11     stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R12     Abort main loop
+Break 3 [60]> (load 'inspectobj.lisp)*
+;;    Loading file inspectobj.lisp ...
+** - Continuable Error
+DEFMETHOD((MAKE-INSTANCE NIL STANDARD-OBJECT)): (#<PACKAGE CLOS> #<PACKAGE COMMON-LISP> #<PACKAGE COMMON-LISP>) is locked
+Si vous continuez (en tapant «continue»): Ignore the lock and proceed
+The following restarts are also available:
+SKIP           :R1      skip (DEFMETHOD MAKE-INSTANCE #)
+RETRY          :R2      retry (DEFMETHOD MAKE-INSTANCE #)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD MAKE-INSTANCE #)
+RETRY          :R6      retry (DEFMETHOD MAKE-INSTANCE #)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort debug loop
+SKIP           :R9      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R10     retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R11     stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R12     Abort debug loop
+SKIP           :R13     skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R14     retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R15     stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R16     Abort main loop
+Break 4 [61]> 
+;;    Loaded file inspectobj.lisp
+T
+Break 3 [60]> (load 'inspectobj.lisp)*
+;;    Loading file inspectobj.lisp ...
+WARNING: On remplace la méthode #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-OBJECT>)> dans #<STANDARD-GENERIC-FUNCTION MAKE-INSTANCE>.
+;;    Loaded file inspectobj.lisp
+T
+Break 3 [60]> 
+T
+Break 3 [60]> (load 'inspectobj.lisp)*
+;;    Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-OBJECT>)> has 1, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT #)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT #)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD MAKE-INSTANCE #)
+RETRY          :R6      retry (DEFMETHOD MAKE-INSTANCE #)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort debug loop
+SKIP           :R9      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R10     retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R11     stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R12     Abort debug loop
+SKIP           :R13     skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R14     retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R15     stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R16     Abort main loop
+Break 4 [62]> 
+[63]> (load 'inspectobj.lisp)*
+;; Loading file inspectobj.lisp ...
+WARNING: On remplace la méthode #<STANDARD-METHOD NIL> dans #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT>.
+;; Loaded file inspectobj.lisp
+T
+[64]> 
+T
+[65]> (load 'inspectobj.lisp)*
+;; Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<BUILT-IN-CLASS T> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [66]> (load 'inspectobj.lisp)*
+;;  Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-CLASS>)> has 1, but #<STANDARD-GENERIC-FUNCTION INSPECT-OBJECT> has 0 required parameters
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort debug loop
+SKIP           :R5      skip (DEFMETHOD INSPECT-OBJECT # ...)
+RETRY          :R6      retry (DEFMETHOD INSPECT-OBJECT # ...)
+STOP           :R7      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R8      Abort main loop
+Break 2 [67]> 
+[68]> (load 'inspectobj.lisp)*
+;; Loading file inspectobj.lisp ...
+*** - #<STANDARD-METHOD (#<STANDARD-CLASS STANDARD-CLASS> #<BUILT-IN-CLASS T>)> has 2, but #<STANDARD-GENERIC-FUNCTION INSPECT-INSTANCE> has 1 required
+      parameter
+Rentrées possibles:
+SKIP           :R1      skip (DEFMETHOD INSPECT-INSTANCE # ...)
+RETRY          :R2      retry (DEFMETHOD INSPECT-INSTANCE # ...)
+STOP           :R3      stop loading file /auto_home/fpetitdemang/M2/meta-prog/inspecteur-objet/inspectobj.lisp
+ABORT          :R4      Abort main loop
+Break 1 [69]> (load 'inspectobj.lisp)*
+;;  Loading file inspectobj.lisp ...
+;;  Loaded file inspectobj.lisp
+T
+Break 1 [69]> 
+T
+Break 1 [69]> 

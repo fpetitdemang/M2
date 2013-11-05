@@ -1,0 +1,39 @@
+"classes sont modeler par la classe -type-"
+
+class MemoClass(type):
+     
+    """Exemple d'une metaclasse."""
+     
+    "parametre:
+    *la métaclasse servant de base à la création de notre nouvelle classe ;
+    *le nom de notre nouvelle classe ;
+    *un tuple contenant les classes dont héritent notre classe à créer ;
+    *le dictionnaire des attributs et méthodes de la classe à créer.
+    "
+   def __new__(metacls, nom, bases, dict):
+       """Creation de notre classe."""
+       print("On cree la classe {}".format(nom))
+       metacls.instanceSet = list()
+       return type.__new__(metacls, nom, bases, dict)
+
+    def __init__(cls, nom, bases, dict):
+        """Constructeur de notre metaclasse, appele quand on cree une classe."""
+        type.__init__(cls, nom, bases, dict)
+        
+
+    def getInstanceSet(self):
+        return self.instanceSet
+
+        
+    
+    
+        
+        
+class MemoObject(MemoClass):
+    __metaclass__ = MemoClass
+
+    "constructeur de MemoObject"
+    def __init__():
+
+
+personne = MemoObject()

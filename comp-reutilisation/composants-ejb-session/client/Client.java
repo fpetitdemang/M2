@@ -10,16 +10,17 @@ public class Client
 
 { 
     //javac -d . Client.java 
-    //export CLASSPATH=jndi.properties:.:~/glassfishv3/glassfish/lib/appserv-rt.jar 
+    //export CLASSPATH=jndi.properties:.:~/glassfishv3/glassfish/lib/appserv-rt.jar
     //java converter.Client -cp jndi.properties
 
     
     public static void main (String[] args){
+	System.out.println("Lancement main");
 
 	try {
 	    InitialContext context = new InitialContext();
-	    IConverter converter = (IConverter) context.lookup("java:global/converter/Converter-ejb/ConverterBean");
-	    System.out.print("Entrer un montant à convertir : ");
+	    IConverter converter = (IConverter) context.lookup("java:global/converter/Converter-ejb/ConverterBean");//
+	    System.out.print("Entrer un montant à convertir : ");-
 	    Scanner sc = new Scanner(System.in);
 	    double amount = sc.nextDouble();
 	    amount = converter.euroToOtherCurrency(amount,"USD");

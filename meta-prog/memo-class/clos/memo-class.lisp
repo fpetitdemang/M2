@@ -61,17 +61,17 @@
 
 (defclass SubPersonne (Personne)()(:metaclass memo-class))
 
-(setf p1 (make-instance 'Personne))
-(setf p2 (make-instance 'Personne))
-(setf sp1 (make-instance 'SubPersonne))
+;(setf p1 (make-instance 'Personne))
+;(setf p2 (make-instance 'Personne))
+;(setf sp1 (make-instance 'SubPersonne))
 ;(setf sp2 (make-instance 'SubPersonne))
 
 ;(print p1)
 ;(print p2)
 ;(print sp1)
 
-(setf p1 (free-object 'p1))
-;(print (get-instances 'Personne))
+;(setf p1 (free-object 'p1))
+(print (get-instances 'Personne))
 
 
 

@@ -1,0 +1,8 @@
+import java.util.ArrayList;
+
+
+public class MemoObject {
+
+	 private static ArrayList<MemoObject> instanceSet = new ArrayList<MemoObject>(); 
+
+}

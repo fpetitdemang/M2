@@ -1,0 +1,15 @@
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MemoObject mo1 = new MemoObject();
+		MemoObject mo2 = new MemoObject();
+		Personne p1 = new Personne();
+		System.out.println(mo2.getInstanceSet());
+	}
+
+}

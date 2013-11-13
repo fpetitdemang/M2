@@ -25,10 +25,11 @@ class MemoObject:
     
     "constructeur de MemoObject"
     def __init__(self):
-        self.add_instance()
+        self.add_instance(self)
 
-    def add_instance(self):
-        type(self).add_instanceMetacls()
+    @staticmethod
+    def add_instance(cls):
+        type(cls).add_instanceMetacls()
 
         
 

@@ -15,21 +15,23 @@ class MemoClass(type):
     def add_instanceMetacls(cls):
         cls.instance_set.append(cls)
  
+    def __call__(self):
+       print("appel call", self)
 
    
     
         
         
 class MemoObject:
-    __metaclass__ = MemoClass
-    
-    "constructeur de MemoObject"
+    __metaclass__ = MemoClass    
+
     def __init__(self):
         self.add_instance(self)
 
     @staticmethod
     def add_instance(cls):
         type(cls).add_instanceMetacls()
+
 
         
 

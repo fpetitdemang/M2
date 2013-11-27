@@ -20,7 +20,7 @@ public class Client
 	try {
 	    InitialContext context = new InitialContext();
 	    IConverter converter = (IConverter) context.lookup("java:global/converter/Converter-ejb/ConverterBean");//
-	    System.out.print("Entrer un montant à convertir : ");-
+	    System.out.print("Entrer un montant à convertir : ");
 	    Scanner sc = new Scanner(System.in);
 	    double amount = sc.nextDouble();
 	    amount = converter.euroToOtherCurrency(amount,"USD");

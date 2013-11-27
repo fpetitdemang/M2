@@ -9,6 +9,8 @@ import views.html.*;
 
 public class Application extends Controller {
 
+    static Form<Task> taskForm = Form.form(Task.class);
+
     public static Result index() {
        return redirect(routes.Application.tasks());
     }
@@ -32,9 +34,10 @@ public class Application extends Controller {
     }
   
   public static Result deleteTask(Long id) {
-       return TODO;
+      Task.delete(id);
+      return redirect(routes.Application.tasks());
   }
 
-   static Form<Task> taskForm = Form.form(Task.class);
+  
 	
 }

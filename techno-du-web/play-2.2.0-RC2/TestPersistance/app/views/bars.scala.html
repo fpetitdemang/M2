@@ -1,0 +1,31 @@
+@(bars: List[Bar], barForm: Form[Bar])
+
+@import helper._
+
+@main("Bar list") {
+    
+    <h1>@bars.size() bars(s)</h1>
+    
+    <table border='1'>
+        @for(bar <- bars) {
+        <tr>
+        	<td>@bar.id</td>
+            <td>@bar.label</td>
+            <td>@form(routes.Application.deleteBar(bar.id)) {
+                    <input type="submit" value="Supprimer">
+             }</td>
+        </tr>   
+        }  
+    </table>
+    
+    
+    <h2>Ajouter nouvel utilisateur</h2>
+    
+    @form(routes.Application.newBar()) {
+        
+        @inputText(barForm("label")) 
+                
+        <input type="submit" value="Ajouter">
+        
+    }
+}

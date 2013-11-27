@@ -1,4 +1,4 @@
-"classes sont modeler par la classe -type-"
+"Solution générale : Chaque instance de MemoClass (Classe avec MemoClass comme metamodel) possede un attribut instance_set (=enss des instances directs). MemoObject est une interface des objets des classes instance de MemoClass, pour manipuler les instances des classes.."
 
 class MemoClass(type):
         

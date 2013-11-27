@@ -1,0 +1,24 @@
+//DESCRIPTION ARCHI//
+    app/ contient le cœur de l'application, séparé entre les modèles, les contrôleurs, et les vues. Ce sont dans ces répertoires que sont stockés les classes Java ;
+    conf/ stocke les fichiers de configuration, en particulier application.conf, les définitions des "routes" (redirection d'une URL vers une classe Java) ou encore les fichiers nécessaires à l'internationalisation ;
+    lib/ contient les librairies Java optionnelles ;
+    public/ héberge les ressources publiques, à savoir les images, les fichiers Javascript ou CSS ;
+    test/ contient les fichiers de test. Il peut s'agir de tests Java (JUnit) ou encore Selenium.
+
+
+
+//COMMANDES DE BASES//
+	1-$play: lance la console play
+	2-$run: lance l'application
+	3-ouvrir navigateur : localhost:9000
+
+
+//SGBD//
+
+*Gestion des evolutions
+	-> gestion de version de la bdd : attention pause des pb pendant le dev
+		/conf/application.conf : decommenter, evolutionplugin=disabled
+		conf/evolutions/default :  script creation bdd
+
+*Couche Model
+	-> JPA est une spécification Java qui définit l'API standard pour le mapping objet-relationnel.

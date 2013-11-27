@@ -1,0 +1,94 @@
+package controllers;
+
+import java.util.List;
+
+import org.springframework.ui.Model;
+
+import models.*;
+import play.*;
+import play.mvc.*;
+import play.data.*;
+import views.html.*;
+
+public class Application extends Controller {
+
+	static Form userForm = Form.form(User.class);
+	static Form barForm = Form.form(Bar.class);
+
+    public static Result index() {
+    	return ok("Ok");
+    }
+    
+    public static Result test(){
+    	Bar b = new Bar("LambdaBar", "15 rue du stade", (float)1, (float)2);
+    	Bar.create(b);
+    	Bar b1 = new Bar("LambdaBar2", null, 2, 3);
+    	Bar.create(b1);
+    	
+    	User u = new User("toto@gmail.com", "****", "toto", "M", 25, "1234");
+    	u.addBar(b);
+    	u.addBar(b1);
+    	User.create(u);
+    	
+    	
+    	return ok(""+User.find(u.id).getFavoriteBar().size());
+    }
+    
+    public static Result newUser(){
+    	Form filledForm = userForm.bindFromRequest();
+  	  if(filledForm.hasErrors()) {
+  	    return badRequest(
+  	      users.render(User.all(), filledForm)
+  	    );
+  	  } else {
+  	    User.create((User) filledForm.get());
+  	    
+  	    return redirect(routes.Application.allUser());  
+  	  }
+    }
+    
+    public static Result deleteUser(Long id) {
+  	  User.delete(id);
+  	  return redirect(routes.Application.allUser());
+    	}
+    
+    public static Result allUser(){
+    	return ok(users.render(User.all(), userForm));
+    }
+    
+    public static Result userProfil(Long id){
+    	return ok(usersProfil.render(User.get(Long id)));
+    }
+    
+    public static Result bar(Long id){
+    	/*if(request().accepts("application/json")){
+    	return ok("content : html \n"+Bar.find(id).label);}else{
+    	}*/
+    	return ok(Bar.find(id).label+"");
+    }
+    
+    
+    
+    public static Result newBar(){
+    	Form filledForm = barForm.bindFromRequest();
+  	  if(filledForm.hasErrors()) {
+  	    return badRequest(
+  	      bars.render(models.Bar.all(), filledForm)
+  	    );
+  	  } else {
+  	    Bar.create((Bar) filledForm.get());
+  	    
+  	    return redirect(routes.Application.allBar());  
+  	  }
+    }
+    
+    public static Result deleteBar(Long id) {
+  	  Bar.delete(id);
+  	  return redirect(routes.Application.allBar());
+    	}
+    
+    public static Result allBar(){
+    	return ok(bars.render(Bar.all(), userForm));	
+    }
+
+}

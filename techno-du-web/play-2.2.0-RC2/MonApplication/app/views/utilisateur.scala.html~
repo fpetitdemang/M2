@@ -1,0 +1,19 @@
+@(utilisateurs: List[Utilisateur])
+
+@main("Gestion des utilisateurs") {
+    
+    <h1>@utilisateurs.size() task(s)</h1>
+    
+    <ul>
+        @for(utilisateur <- utilisateurs) {
+            <li>
+                @utilisateur.nom
+                
+                @form(routes.Application.deleteUtilisateurs(utilisateur.id)) {
+                    <input type="submit" value="Delete">
+                }
+            </li>
+        }
+    </ul>
+    
+}

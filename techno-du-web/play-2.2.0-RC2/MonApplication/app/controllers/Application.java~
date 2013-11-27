@@ -1,0 +1,43 @@
+package controllers;
+
+import play.*;
+import play.mvc.*;
+import play.data.*;
+import models.*;
+
+import views.html.*;
+
+public class Application extends Controller {
+
+    //static Form<Task> taskForm = Form.form(Task.class);
+
+    public static Result index() {
+           return ok(index.render("Your new application is ready."));
+    }
+
+    public static Result utilisateur() {
+       return ok(views.html.utilisateur.render());
+    }
+  
+    public static Result newUtilisateur() {
+	  /*Form<Task> filledForm = taskForm.bindFromRequest();
+	  if(filledForm.hasErrors()) {
+		 return badRequest(
+		   views.html.index.render(Task.all(), filledForm)
+		 );
+	  } else {	
+		 Task.create(filledForm.get());
+		 return redirect(routes.Application.tasks());  
+	  }*/
+		return TODO;
+    }
+  
+  public static Result deleteUtilisateur(Long id) {
+      //Task.delete(id);
+      //return redirect(routes.Application.utilisateur());
+		return TODO;
+  }
+
+  
+	
+}

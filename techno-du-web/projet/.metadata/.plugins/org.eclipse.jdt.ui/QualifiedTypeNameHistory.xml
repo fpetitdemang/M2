@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.hp.hpl.jena.rdf.model.ModelFactory"/>
-<fullyQualifiedTypeName name="com.hp.hpl.jena.rdf.model.Model"/>
 <fullyQualifiedTypeName name="javax.annotation.Resource"/>
 <fullyQualifiedTypeName name="com.hp.hpl.jena.vocabulary.VCARD"/>
 <fullyQualifiedTypeName name="com.hp.hpl.jena.rdf.model.Property"/>
+<fullyQualifiedTypeName name="com.hp.hpl.jena.sparql.vocabulary.FOAF"/>
+<fullyQualifiedTypeName name="com.hp.hpl.jena.rdf.model.Resource"/>
+<fullyQualifiedTypeName name="com.hp.hpl.jena.rdf.model.Model"/>
+<fullyQualifiedTypeName name="play.mvc.Result"/>
+<fullyQualifiedTypeName name="com.sun.jna.platform.win32.Netapi32Util.User"/>
+<fullyQualifiedTypeName name="play.data.Form"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="models.Bar"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.text.DateFormat"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="javax.swing.JPanel"/>
+<fullyQualifiedTypeName name="play.Logger"/>
+<fullyQualifiedTypeName name="scala.reflect.internal.Trees.This"/>
+<fullyQualifiedTypeName name="models.User"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>

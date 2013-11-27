@@ -1,0 +1,155 @@
+package models;
+ 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+import play.db.ebean.*;
+import play.data.validation.Constraints.*;
+import javax.persistence.*;
+import javax.swing.JPanel;
+
+import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.rdf.model.Property;;
+
+
+import play.db.*; 
+import play.mvc.Content;
+ 
+//import play.db.jpa.*;
+ 
+@Entity
+@Table(name = "User")
+public class User extends Model {
+ 	
+	@Id		
+	public int id;
+	@Column(name = "email")
+    public String email;
+    public String name;
+    public String first_name;
+    public String pseudo;
+    public String sexe;
+    public Date date_naissance;
+    public int age;
+    public boolean isAdmin;
+    public String password;
+
+	@ManyToMany
+	public List<Bar> favoriteBar;
+
+	@ManyToMany
+	//public List<User> knownUser;
+
+    public static Finder<Long,User> find = new Finder(Long.class, User.class);
+	//public static com.hp.hpl.jena.rdf.model.Model modelRdf = writeModel();
+    
+    public User(String email, String name, String first_name, String pseudo, String sexe, String date_naissance, String password) {
+        this.email = email;
+        this.name = name;
+        this.first_name = first_name;
+        this.pseudo = pseudo;
+        this.sexe = sexe;
+        this.age = 0;
+        this.password = password;
+        this.date_naissance = new Date(date_naissance);
+        favoriteBar = new ArrayList<Bar>();
+        //this.knownUser = new ArrayList<User>();
+        
+    }
+    
+    public void addBar(Bar m_bar){
+    	favoriteBar.add(m_bar);
+    }
+
+	public static List<User> all() {
+			return find.all();
+   	}
+	
+	public static User find(long id){
+		return find.byId(id);
+	}
+
+ 	public static void delete(Long id) {
+		find.ref(id).delete();
+   }
+ 	public static void create(User user){
+ 		user.save();
+ 	}
+ 	
+	public static User get(Long id) {
+		return find.byId(id);
+	}
+	
+	public static User getByFullName(String fullname){
+		String[] tmp = fullname.split(".");
+		String tmp_name = tmp[0];
+		String tmp_firstName = tmp[1];
+		return null;
+	}
+	
+  public String toRdfXML()
+    {
+    	String resultat;
+    	String NS_FOAF = "http://xmlns.com/foaf/0.1/";
+    	String NS_NICETAG = "http://ns.inria.fr/nicetag/2010/09/09/voc";
+    	
+        com.hp.hpl.jena.rdf.model.Model model = ModelFactory.createDefaultModel();
+        
+        //ajout d un namespace
+        model.setNsPrefix("foaf", NS_FOAF);
+        model.setNsPrefix("nt", NS_NICETAG);
+        
+        //creation des proprietes
+        Property firstname = model.createProperty( NS_FOAF + "firstName" );
+        Property familyName = model.createProperty( NS_FOAF + "familyName" );
+        Property mail = model.createProperty( NS_FOAF + "mbox");
+        Property sexe = model.createProperty( NS_FOAF + "gender");
+        Property dateNaissance = model.createProperty( NS_FOAF + "birthday" );
+        Property age = model.createProperty( NS_FOAF + "age");
+        
+        Resource person = model.createResource("https://www.facebook.com/franck.petitdemange");
+        
+        person.addProperty(firstname, this.first_name);
+        person.addProperty(mail, this.email);
+        person.addProperty(sexe, this.sexe);
+        person.addProperty(dateNaissance, getDate_naissance());
+        person.addProperty(age, ""+this.age);
+                    
+       return model.toString();
+    }
+    
+	public List<Bar> getFavoriteBar() {
+		return favoriteBar;
+	}
+	
+	public int getAge(){
+		Date aujourdhui = new Date();
+		int resultat = aujourdhui.getYear() - date_naissance.getYear();
+		return resultat;
+	}
+	
+	public String getDate_naissance(){
+		DateFormat format_date_naissance = new SimpleDateFormat("dd-MM-yyyy");
+		return format_date_naissance.format(date_naissance);
+	}
+
+	/*public List<User> getKnownUser() {
+		return knownUser;
+	}*/
+
+
+
+
+
+	/*public static User FindByName(String name){
+		List<User> maList = find.all();
+		for(int i = 0; i < maList.size(); i++){
+			if (maList.get(i).fullname.equals(name))
+				return maList.get(i);
+		}
+				return null;
+	}*/
+	
+}
+

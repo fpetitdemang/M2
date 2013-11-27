@@ -16,7 +16,7 @@ projet :
 1bis-author-class en CLOS
  
 	implemementer memo-class en :
-		CILOS,
+		CLOS,
 		Python, ou Ruby (typage dynamique & niveau méta),
 		Java ou C# (langage std, pas de niveau méta mais faire simulation)
 		

@@ -91,7 +91,18 @@ public class Application extends Controller {
         if(computerForm.hasErrors()) {
             return badRequest(createForm.render(computerForm));
         }
-        computerForm.get().save();
+        computerForm.get().save();              The same as -type unless the file is a symbolic link.  For symbolic links: if the -H or -P option was specified, true if the file  is
+              a link to a file of type c; if the -L option has been given, true if c is `l'.  In other words, for symbolic links, -xtype checks the
+              type of the file that -type does not check.
+
+   ACTIONS
+       -delete
+              Delete files; true if removal succeeded.  If the removal failed, an error message is issued.  If -delete fails,  find's  exit  status
+              will be nonzero (when it eventually exits).  Use of -delete automatically turns on the -depth option.
+
+              Warnings:  Don't  forget  that  the  find  command line is evaluated as an expression, so putting -delete first will make find try to
+              delete everything below the starting points you specified.  When testing a find command line  that  you  later  intend  to  use  with
+
         flash("success", "Computer " + computerForm.get().name + " has been created");
         return GO_HOME;
     }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.dltk.ruby.launching.RubyLaunchConfigurationType">
+<stringAttribute key="mainScript" value="app/models/Bar.java"/>
+<stringAttribute key="nature" value="org.eclipse.dltk.ruby.core.nature"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/TestPersistance"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="project" value="TestPersistance"/>
+</launchConfiguration>

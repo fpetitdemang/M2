@@ -1,4 +1,4 @@
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.hp.hpl.jena.sparql.vocabulary.FOAF"><rhs name\="com.hp.hpl.jena.sparql.vocabulary.FOAF"/></lhs><lhs name\="play.db.ebean.Model"><rhs name\="models.Bar"/><rhs name\="models.User"/></lhs><lhs name\="com.avaje.ebean.bean.EntityBean"><rhs name\="models.Bar"/><rhs name\="models.User"/></lhs><lhs name\="models.User"><rhs name\="models.User"/></lhs><lhs name\="models.Bar"><rhs name\="models.Bar"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.util.Date"/></lhs><lhs name\="java.util.Date"><rhs name\="java.util.Date"/></lhs></history>
 content_assist_number_of_computers=16
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=60,60,60

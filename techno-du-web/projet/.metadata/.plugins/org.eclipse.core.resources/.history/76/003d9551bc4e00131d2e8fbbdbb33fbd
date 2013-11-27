@@ -1,0 +1,45 @@
+package models;
+ 
+import java.util.*;
+
+import play.db.ebean.*;
+import play.db.ebean.Model.Finder;
+import play.data.validation.Constraints.*;
+import javax.persistence.*;
+
+import play.db.*; 
+
+ 
+@Entity
+public class Bar extends Model {
+ 
+	 @Id	
+    public int id;
+    public String label;
+    
+    
+	@ManyToMany
+	public List<User> IsFavorit;
+	
+	public static Finder<Long,Bar> find = new Finder(Long.class, Bar.class);
+    
+    public Bar(String label) {
+		this.label = label;
+		this.EstFavorit = new ArrayList();
+    }
+    
+    public static List<Bar> all() {
+		return find.all();
+	}
+    
+    public static Bar find(Long id){
+    	return find.byId(id);
+    }
+
+	public static void delete(Long id) {
+	find.ref(id).delete();
+}
+	public static void create(Bar bar){
+		bar.save();
+	}
+}

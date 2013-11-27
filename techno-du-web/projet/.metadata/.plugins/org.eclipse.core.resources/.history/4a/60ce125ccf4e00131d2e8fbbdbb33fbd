@@ -1,0 +1,46 @@
+@(user: User)
+
+@import helper._
+
+@main("User profil") {
+    <div typeof="foaf:Person" xmlns:v="http://www.w3.org/2006/vcard/ns# ">
+    <h1></h1>
+    <ul>
+    	<li>@user.name @user.first_name</li>
+    	<li>@user.pseudo</li>
+    	<li>@user.sexe</li>
+    	<li>@user.date_naissance</li>
+    	<li>@user.age</li>
+    </ul>
+    
+    
+    </div>
+    <h1>@users.size() utilisateur(s)</h1>
+    
+    <table border='1'>
+        @for(user <- users) {
+        <tr>
+        	<td>@user.id</td>
+            <td>@user.fullname</td>
+            <td>@user.email</td>
+            
+            <td>@form(routes.Application.deleteUser(user.id)) {
+                    <input type="submit" value="Supprimer">
+             }</td>
+        </tr>   
+        }  
+    </table>
+    
+    
+    <h2>Ajouter nouvel utilisateur</h2>
+    
+    @form(routes.Application.newUser()) {
+        
+        @inputText(userForm("fullname")) 
+        @inputText(userForm("email")) 
+        @inputText(userForm("password")) 
+                
+        <input type="submit" value="Ajouter">
+        
+    }
+}

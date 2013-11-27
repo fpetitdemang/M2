@@ -10,7 +10,11 @@
 cf spécification : page 174 du manuel
 
 
-projet : 
+projet :
+
+1-memo-class en CLOS
+1bis-author-class en CLOS
+ 
 	implemementer memo-class en :
 		CILOS,
 		Python, ou Ruby (typage dynamique & niveau méta),

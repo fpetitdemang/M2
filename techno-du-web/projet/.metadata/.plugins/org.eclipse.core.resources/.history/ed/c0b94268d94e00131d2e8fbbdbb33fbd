@@ -1,0 +1,31 @@
+@(user: User)
+
+@import helper._
+
+@main("User profil") {
+    <div
+    	typeof="foaf:Person" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    	xmlns:v="http://www.w3.org/2006/vcard/ns# ">
+    	
+    <h1 property="foaf:name">@user.name @user.first_name</h1>
+    <ul>
+    	<li property="v:nickname">Pseudo : @user.pseudo</li>
+    	<li property="v:mbox">Email : @user.email</li>
+    	<li property="foaf:gender">Sexe : @user.sexe</li>
+    	<li property="foaf:birthday">Date naissance : @user.getDate_naissance</li>
+    	<li property="foaf:age">Age : @user.getAge</li>
+    	<li>Bars favorient :
+    		<ul>
+    			 @for(bar <- user.getFavoriteBar()) {
+					<li property="">@bar.label</li>
+        		}  
+    		</ul>
+    	</li>
+    	<li>Amis :
+    		<ul>
+    			<li typeof="foaf:Person"><a property="foaf:name" rel="foaf:homepage" href=""></a></li>
+    		</ul>
+    	</li>
+    </ul>
+
+}

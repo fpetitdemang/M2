@@ -1,0 +1,22 @@
+@(user: User)
+
+@import helper._
+
+@main("User profil") {
+    <div xmlns:v="http://www.w3.org/2006/vcard/ns# ">
+    <h1>@user.name @user.first_name</h1>
+    <ul>
+    	<li>Pseudo : @user.pseudo</li>
+    	<li>Sexe : @user.sexe</li>
+    	<li>Date naissance : @user.date_naissance</li>
+    	<li>Age : @user.getAge</li>
+    	<li>Bars favorient :
+    		<ul>
+    			 @for(bar <- user.getFavoriteBar()) {
+					<li>@bar.label</li>
+        		}  
+    		</ul>
+    	</li>
+    </ul>
+
+}

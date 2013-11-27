@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;users.scala.html&apos; to &apos;users.scala.html&apos;&#x0A;- Original project: &apos;utilisateur&apos;&#x0A;- Destination element: &apos;users.scala.html&apos;&#x0A;- Original element: &apos;users.scala.html&apos;" description="Copy file" element1="app/views/users.scala.html" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1384181993044" target="/utilisateur/app/views/users.scala.html" units="0" version="1.0"/>
+</session>

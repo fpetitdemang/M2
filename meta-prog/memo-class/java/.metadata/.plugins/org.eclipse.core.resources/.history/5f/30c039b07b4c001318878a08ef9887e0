@@ -1,0 +1,6 @@
+
+public class Personne extends MemoObject{
+
+	private String label = "Personne";
+
+}

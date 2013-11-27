@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+
+
+public class MemoObject {
+
+	 private static ArrayList<MemoObject> instanceSet = new ArrayList<MemoObject>(); 
+	 
+	 public MemoObject(){
+		 //acces en ecriture de instanceSet
+		 instanceSet.add(this);
+	 }
+	 
+	 
+	 //acces en lecture de instanceSet
+	 public ArrayList<MemoObject> getInstanceSet(){
+		 ArrayList<MemoObject> res = new ArrayList<MemoObject>();
+		 for(int i=0; instanceSet.size() < i; i++){
+			 if ((instanceSet.get(i) instanceof this))
+		 }
+		return null;
+		 
+	 }
+
+}

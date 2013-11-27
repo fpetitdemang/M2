@@ -1,0 +1,43 @@
+Object subclass: #Bank
+	instanceVariableNames: 'comptes name'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'METAPROG'
+
+name: n
+	name :=n.
+	comptes := OrderedCollection new.
+
+
+
+########################################
+Object subclass: #Compte
+	instanceVariableNames: 'proprio solde'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'METAPROG'
+
+
+initialize: unProprio 
+	"comment stating purpose of message"
+	proprio := unProprio.
+	solde := 0.
+
+deposer: aNumber
+	"comment stating purpose of message"
+	solde := solde + aNumber 
+
+getSolde 
+	^solde 
+
+retrait: unMontant
+	"comment stating purpose of message"
+	solde > unMontant 
+		ifTrue: [solde := solde - unMontant.
+				^unMontant ]
+
+#############################################
+C1 := Compte new initialize: #Dupont.
+C1 deposer: 500.
+C1 deposer: 50.
+C1 retrait: 100

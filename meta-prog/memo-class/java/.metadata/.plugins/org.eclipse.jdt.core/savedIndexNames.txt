@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+/auto_home/fpetitdemang/M2/meta-prog/memo-class/java/.metadata/.plugins/org.eclipse.jdt.core
+1198206356.index
+4267884898.index
+1514218975.index
+2921074714.index

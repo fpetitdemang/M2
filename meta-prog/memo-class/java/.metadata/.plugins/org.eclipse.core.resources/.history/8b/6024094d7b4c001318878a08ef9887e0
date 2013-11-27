@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+public class MemoObject {
+
+	 static ArrayList<MemoObject> instanceSet = new ArrayList<MemoObject>(); 
+	 
+	 public MemoObject(){
+		 //acces en ecriture de instanceSet
+		 instanceSet.add(this);
+	 }
+	 
+	 
+	 //acces en lecture de instanceSet
+	 public ArrayList<MemoObject> getInstanceSet(){
+		 ArrayList<MemoObject> resultat = new ArrayList<MemoObject>();
+		 Object o = this.getClass();
+		 
+		 Iterator<MemoObject> it = instanceSet.iterator();
+		 MemoObject tmp;
+		 
+		 while(it.hasNext()){
+			 tmp = it.next();
+			 if ((tmp.getClass() == this.getClass())){
+				 //System.out.println("ajouter : "+tmp.getClass());
+				 resultat.add(tmp);
+			 }else{
+				 //System.out.println("ignorere : "+tmp.getClass());
+			 }
+		 }
+		 
+		return resultat;
+		 
+	 }
+
+}

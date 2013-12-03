@@ -28,8 +28,8 @@
 ; Libération pour memo-class.
 (defmethod free-instance ((mc memo-class) item)
   ;SET field -> generic way of assigning values to data structures
-  (setf (instance-set mc)
-        (delete item (instance-set mc))
+  (setf (get-instance-set mc)
+        (delete item (get-instance-set mc))
         )
   )
 
@@ -51,18 +51,33 @@
 ;TEST
 ;verifier que l'on à pas memorisé les instances de la sous-classe
 
+;----------------REQUETES--------------------
+
+;(select-instance (find-class 'Personne) :attr1 'val :attr2 'val)
+(defmethod select-instance (cls &rest lst)
+  )
+
+
+;--------------------------------------------
+
+
+(defclass Personne (memo-object)
+ ((name :initform '() :initarg :name)
+  (first-name :initform '() :initarg :first-name))
+ (:metaclass memo-class))
+
+(defclass SubPersonne (Personne)
+  ()
+  (:metaclass memo-class))
+
+
 (defun get-instances (mc)
   (get-instance-set (find-class mc))
   )
 
-(defclass Personne (memo-object)
- ()
- (:metaclass memo-class))
 
-(defclass SubPersonne (Personne)()(:metaclass memo-class))
-
-;(setf p1 (make-instance 'Personne))
-;(setf p2 (make-instance 'Personne))
+(setf p1 (make-instance 'Personne :name "Patrick" :first-name "Bernard"))
+;(setf p2 (make-instance 'Personne) :first-name "Michel")
 ;(setf sp1 (make-instance 'SubPersonne))
 ;(setf sp2 (make-instance 'SubPersonne))
 
@@ -71,7 +86,7 @@
 ;(print sp1)
 
 ;(setf p1 (free-object 'p1))
-(print (get-instances 'Personne))
+;(print (get-instances 'Personne))
 
-
+;(slot-value p1 (slot-definition-name (car (get-slots-set (find-class 'Personne)))))
 

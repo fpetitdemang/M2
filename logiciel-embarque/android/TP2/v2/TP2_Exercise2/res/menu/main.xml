@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/add_task"
+        android:icon="@drawable/add_task"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/add_task"/>
+    <item
+        android:id="@+id/display_task"
+        android:icon="@drawable/display_task"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/display_task">
+        <menu>
+            <item
+                android:id="@+id/display_task_all"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="@string/display_task_all"/>
+            <item
+                android:id="@+id/display_task_by_category"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="@string/display_task_by_category"/>
+            <item
+                android:id="@+id/display_task_by_time"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="@string/display_task_by_time"/>
+            <item
+                android:id="@+id/display_task_by_category_and_time"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="@string/display_task_by_category_and_time"/>
+        </menu>
+    </item>
+    
+    <item
+        android:id="@+id/remove_task"
+        android:icon="@drawable/remove_task"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/remove_task"/>
+    <item
+        android:id="@+id/add_category"
+        android:icon="@drawable/add_category"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/add_category"/>
+
+</menu>
